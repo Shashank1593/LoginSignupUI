@@ -5,16 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        this.getSupportActionBar().setTitle("Log In");
+        setContentView(R.layout.activity_signup);
+        this.getSupportActionBar().setTitle("Sign Up");
+
     }
-    public void signup(View view) {
-        Intent intent = new Intent(MainActivity.this , Signup.class);
+    public void stol(View view) {
+        Intent intent = new Intent(Signup.this , MainActivity.class);
         startActivity(intent);
     }
 }
